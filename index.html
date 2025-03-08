@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJS Class 9 Aura Counter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">JJS CLASS 9 AURA COUNTER 🏆</h1>
+        
+        <div class="leaderboard">
+            <div class="header">
+                <span>Rank</span>
+                <span>Student</span>
+                <span>Aura</span>
+                <span>Badges</span>
+            </div>
+            <div id="leaderboardList" class="leaderboard-list"></div>
+        </div>
+
+        <a href="admin.html" class="admin-link">Admin Portal</a>
+    </div>
+
+    <!-- Student Details Modal -->
+    <div id="studentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalName"></h2>
+            <div class="modal-body">
+                <div class="stats">
+                    <p>Aura: <span id="modalAura"></span></p>
+                    <p>Rank: <span id="modalRank"></span></p>
+                </div>
+                <div class="badge-container">
+                    <h3>Badges:</h3>
+                    <div id="modalBadges" class="badges"></div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="auraChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
