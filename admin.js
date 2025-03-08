@@ -1,6 +1,6 @@
 function handleLogin() {
     const password = document.getElementById('adminPassword').value;
-    if(password === 'admin123') {
+    if(password === 'Himal@2066') {
         document.getElementById('loginSection').style.display = 'none';
         document.getElementById('adminDashboard').style.display = 'block';
         populateStudentSelects();
